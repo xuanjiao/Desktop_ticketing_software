@@ -1,0 +1,9 @@
+Step 1: Click "user setting" botton and enter the "User setting" window.
+
+Step 2: Enter the name, period and payment of the user.
+
+Step 3: Click "add user" botton.
+
+Step 4: The application will send a "CREATE" signal to device. The device will generate a random RFID and send it back.
+
+Step 5: The new generated user along with new RFID will be stored in database. If succeed it pops a "add user success" message. The new user added can be seen in the table view on the right side of the window

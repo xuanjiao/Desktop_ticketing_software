@@ -1,0 +1,17 @@
+Step 1: Download MySQL Community Server and mysql workbench in website https://dev.mysql.com/downloads/mysql/
+
+Step 2: use root user to connect database.
+
+Step 3: Choose server -> database import tab.
+        select "import from Project folder" option. The folder path is "(application download path)/ticketEXE/database"
+
+Step 3: Open a new sql query and run following query command:
+                GRANT ALL ON *.* to user1@'%' IDENTIFIED BY 'raspberry';
+
+Step 4: Open the application and click "database setting" button and fill in the database information in line edits.
+
+        Host name     -- localhost
+        database name -- mydb
+        port          -- 3306
+        user name     -- user1
+        password      -- raspberry

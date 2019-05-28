@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/document">
+        <file>doc/connect_remote_database.txt</file>
+        <file>doc/connect_to_provided_database.txt</file>
+        <file>doc/connect_to_new_database.txt</file>
+        <file>doc/connect_to_serial_port.txt</file>
+        <file>doc/add_new_user.txt</file>
+        <file>doc/remove_user.txt</file>
+        <file>doc/connect_to_database.txt</file>
+    </qresource>
+    <qresource prefix="/logo">
+        <file>logo/icon.png</file>
+        <file>logo/logo.png</file>
+        <file>logo/qestion.png</file>
+        <file>logo/winIcon.ico</file>
+    </qresource>
+</RCC>

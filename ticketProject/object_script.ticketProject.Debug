@@ -1,0 +1,16 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\databasedialog.o
+./debug\databasesetting.o
+./debug\usersettingdialog.o
+./debug\user.o
+./debug\serialportsettingdialog.o
+./debug\docdialog.o
+./debug\qrc_resources.o
+./debug\moc_mainwindow.o
+./debug\moc_databasedialog.o
+./debug\moc_usersettingdialog.o
+./debug\moc_serialportsettingdialog.o
+./debug\moc_docdialog.o
+);

@@ -1,0 +1,7 @@
+Step 1: Click "user setting" botton and enter the "User setting" window.
+
+Step 2: Choose the user that you want to remove.
+
+Step 3: Click "remove user" botton.
+
+Step 4: If it succeed, it pops a "remove user succeed" button.

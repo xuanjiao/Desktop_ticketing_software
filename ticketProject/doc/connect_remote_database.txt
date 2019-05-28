@@ -1,0 +1,15 @@
+Step 1: Open the terminal in remote host.
+
+Step 2: Run following command in the terminal to log in the database. Enter the password of the root account.
+                        mysql -u root -p
+
+Step 3:	Run following command to enable your user to access the database in any other network.
+                        GRANT ALL ON *.* to <your user name>@'%' IDENTIFIED BY '<your password>';
+
+Step 4: Open the application and click "database setting" button and fill in the database information in line edits.
+
+        Host name     -- IP address of the remote host
+        database name -- remote database name that you want to connect
+        port          -- port name of the database that you want to connect (Default: 3306)
+        user name     -- your user name
+        password      -- your password

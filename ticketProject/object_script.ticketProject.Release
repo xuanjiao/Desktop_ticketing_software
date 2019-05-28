@@ -1,0 +1,16 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\databasedialog.o
+./release\databasesetting.o
+./release\usersettingdialog.o
+./release\user.o
+./release\serialportsettingdialog.o
+./release\docdialog.o
+./release\qrc_resources.o
+./release\moc_mainwindow.o
+./release\moc_databasedialog.o
+./release\moc_usersettingdialog.o
+./release\moc_serialportsettingdialog.o
+./release\moc_docdialog.o
+);

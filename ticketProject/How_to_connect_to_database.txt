@@ -1,0 +1,61 @@
+1. How to connect with provided mysql database
+
+	Step 1: Download MySQL Community Server and mysql workbench in website https://dev.mysql.com/downloads/mysql/
+
+	Step 2: Import .sql database file called "mydb", which is in ./ticketProjectEXE/database folder
+
+	Step 3: Open a new sql query and run following query command:
+		GRANT ALL ON *.* to user1@'%' IDENTIFIED BY 'raspberry';
+
+	Step 4: Open the application and click "database setting" button and fill in the database information in line edits
+
+		Host name     -- localhost
+		database name -- mydb
+		port          -- 3306
+		user name     -- user1
+		password      -- raspberry	
+
+
+2. How to connect to a remote mysql database
+
+	Step 1: Open the terminal in remote host.
+
+	Step 2: Run following command in the terminal to log in the database. Enter the password of the root account.
+			mysql -u root -p
+
+	Step 3:	Run following command to enable your user to access the database in any other network.
+			GRANT ALL ON *.* to <your user name>@'%' IDENTIFIED BY '<your password>';
+
+	Step 4: Open the application and click "database setting" button and fill in the database information in line edits.
+
+		Host name     -- IP address of the remote host
+		database name -- remote database name that you want to connect
+		port          -- port name of the database that you want to connect (Default: 3306) 
+		user name     -- your user name
+		password      -- your password
+
+
+2. How to create a new mysql database
+
+	Step 1: Download MySQL Community Server and mysql workbench in website https://dev.mysql.com/downloads/mysql/
+
+	Step 2: Create a database and create a table in this database
+
+	Step 3: Generate 4 column and set data type :
+
+		Column	Name	Datatype	Features
+		1	name	VARCHAR(20) 	NOT NULL Unique
+		2	RFID  	VARCHAR(20) 	NOT NULL Unique
+		3	period	INT(10)		NOT NULL 
+		4	payment	TINYINT(1)	NOT NULL
+	
+	Step 4:	Open a new sql query and run following query command, to enable your user to access the database:			
+			GRANT ALL ON *.* to <your user name>@‘%’ IDENTIFIED BY ‘<your password>’;
+
+	Step 5: Open the application and click "database setting" button and fill in the database information in line edits
+
+		Host name     -- localhost
+		database name -- database name you created
+		port          -- port name of the database you created (default: 3306)
+		user name     -- your user name ( you can use root account) 
+		password      -- your password
