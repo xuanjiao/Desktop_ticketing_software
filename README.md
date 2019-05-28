@@ -1,6 +1,5 @@
-#Developer document
-
-##Table and content
+# Developer document
+## Table and content
 
 1. Introduction
 2.	Introduction of GUI
@@ -20,16 +19,16 @@
 	* 4.3. Important functions 
 
 
-##1. Introduction
+## 1. Introduction
 
 Ticket application is a QT GUI application. It communicate with ticket device with serial port, and it can query, insert, delete data in MySQL database.
 
-##2. Introduction of GUI
+## 2. Introduction of GUI
 
-###2.1. Main window
-![main window](main_window.png)
+### 2.1. Main window
+![main window](developerDoc/dia_mainWindow.png)
 
-####Setting buttons
+#### Setting buttons
 
 * There are three setting buttons: ***serial port setting*** , ***User setting***, ***Database setting***.
 * You can single click the button and enter the correspounding setting 
@@ -40,7 +39,7 @@ dialogs.
 * The help button is the button with question mark icon.
 * You can single click the button and enter the ducumentation dialog
 
-####Start and stop buttons
+#### Start and stop buttons
 
 * When serial port and database setting is completed, you can click ***start*** button to
 	* send a start signal to ticket device. 
@@ -49,70 +48,70 @@ dialogs.
 	* stop receiving user's RFID from ticket device
 	* send a stop signal to ticket device.
 
-####Line edits
+#### Line edits
 
 * the users information in the database will be shown in these four line edits: ***RFID***, ***Name***, ***Period***, ***Payment***
 * If the RFID read from serial port can not be found in database, the line edits will be clear.
 
-####Message box
+#### Message box
 The application will pop error message in the following situations:
 
 * Disconnected to the database.
 * Disconnected to the ticket device. 
 
-###2.2. Serial port setting dialog
-![serial port setting dialog](serial_port_setting.png) 
+### 2.2. Serial port setting dialog
+![serial port setting dialog](developerDoc/serial_port_setting.png) 
 
 You can single click **show available port** button and  choose port and baudrate in ***Port*** and ***Baudrate*** comboboxs. 
 
 If successfully connect to the ticket device, it pops success message, otherwise it pops error message with error details.
 
-###2.3. Database setting dialog
-![database setting dialog](database_Setting.png)
+### 2.3. Database setting dialog
+![database setting dialog](developerDoc/dia_database_setting.png)
 
 You can enter the information of the database in Edits and click ***OK*** button.
 
 If successfully connect to the database, it pops success message, otherwise it pops error message with error details.
 
-###2.4. User setting dialog
+### 2.4. User setting dialog
 
-![user setting dialog](user_setting.png)
+![user setting dialog](developerDoc/dia_user_setting.png)
 
-####Add a user
+#### Add a user
 
 You can enter the information of the user in ***Name, Period, Payment*** Edits, and then click ***Add user***  button. The new generated user will be shown immediately in the table in the right side.
 
-####Remove a user
+#### Remove a user
 
 You can choose a user and click ***Remove User*** button. 
 
-###2.5. Document dialog
+### 2.5. Document dialog
 
-![document dialog](document.png)
+![document dialog](developerDoc/document.png)
 
 You can choose a title in left window and read the corresponding document in the right window.
 
-##3. Application work flow
+## 3. Application work flow
 
-###3.1. Main window working flow
-![serial port setting work flow](dia_mainWindow.png)
-###3.2.	Serial port setting working flow
+### 3.1. Main window working flow
+![serial port setting work flow](developerDoc/dia_mainWindow.png)
+### 3.2.	Serial port setting working flow
 
-![serial port setting work flow](dia_serial_setting.png)
+![serial port setting work flow](developerDoc/dia_serial_setting.png)
 
-###3.3.	Database setting working flow
+### 3.3.	Database setting working flow
 
-![database setting work flow](dia_database_setting.png)
+![database setting work flow](developerDoc/dia_database_setting.png)
 
-###3.4.	user setting working flow
+### 3.4.	user setting working flow
 
-![serial port setting work flow](dia_user_setting.png)
+![serial port setting work flow](developerDoc/dia_user_setting.png)
 
-##4. Program explanation
+## 4. Program explanation
 
 To Explan the idea, the QT Libraries, and some important functions in program
 
-###4.1. Signal and slot
+### 4.1. Signal and slot
 
 In Qt, we have an alternative to the callback technique: We use signals and slots. A signal is emitted when a particular event occurs. Qt's widgets have many predefined signals, but we can always subclass widgets to add our own signals to them. A slot is a function that is called in response to a particular signal. Qt's widgets have many pre-defined slots, but it is common practice to subclass widgets and add your own slots so that you can handle the signals that you are interested in.
 
@@ -120,7 +119,7 @@ for more information please enter <http://doc.qt.io/archives/qt-4.8/signalsandsl
 
 ![QT signal and slot explan ](http://doc.qt.io/archives/qt-4.8/images/abstract-connections.png)
 
-###4.2. QT libraries 
+### 4.2. QT libraries 
 
 The following library was used in this program
 
@@ -152,9 +151,9 @@ QMainWindow		<http://doc.qt.io/archives/qt-4.8/qmainwindow.html>
 
 QDialog			<http://doc.qt.io/archives/qt-4.8/qdialog.html>
 
-###4.3. Important functions
+### 4.3. Important functions
 
-####In mainwindow.c
+#### In mainwindow.c
 
 ``void MainWindow::readRFID()``
 
