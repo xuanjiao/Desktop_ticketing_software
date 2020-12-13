@@ -1,4 +1,4 @@
-Log X (2018)
+# Log X (2018)
 
 ## Table and content
 
@@ -27,7 +27,7 @@ Log X is a QT GUI application. It communicate with ticket device with serial por
 ## 2. Introduction of GUI
 
 ### 2.1. Main window
-![main window](developerDoc/developerDoc/main_window.png)
+![main window](developerDoc/main_window.png)
 
 #### Setting buttons
 
