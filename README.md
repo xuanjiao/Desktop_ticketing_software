@@ -1,4 +1,5 @@
-# Developer document
+Log X (2018)
+
 ## Table and content
 
 1. Introduction
@@ -21,12 +22,12 @@
 
 ## 1. Introduction
 
-Ticket application is a QT GUI application. It communicate with ticket device with serial port, and it can query, insert, delete data in MySQL database.
+Log X is a QT GUI application. It communicate with ticket device with serial port, and it can query, insert, delete data in MySQL database.
 
 ## 2. Introduction of GUI
 
 ### 2.1. Main window
-![main window](developerDoc/dia_mainWindow.png)
+![main window](developerDoc/developerDoc/main_window.png)
 
 #### Setting buttons
 
