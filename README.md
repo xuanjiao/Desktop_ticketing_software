@@ -22,7 +22,7 @@
 
 ## 1. Introduction
 
-Log X is a QT GUI application. It communicate with ticket device with serial port, and it can query, insert, delete data in MySQL database.
+Log X is a QT GUI application designed for a customer called ''Setup''. It communicate with ticket device with through serial communication. It can query, insert, delete ticket information data in MySQL database.
 
 ## 2. Introduction of GUI
 
@@ -68,7 +68,7 @@ You can single click **show available port** button and  choose port and baudrat
 If successfully connect to the ticket device, it pops success message, otherwise it pops error message with error details.
 
 ### 2.3. Database setting dialog
-![database setting dialog](developerDoc/dia_database_setting.png)
+![database setting dialog](developerDoc/database_setting.png)
 
 You can enter the information of the database in Edits and click ***OK*** button.
 
@@ -76,7 +76,7 @@ If successfully connect to the database, it pops success message, otherwise it p
 
 ### 2.4. User setting dialog
 
-![user setting dialog](developerDoc/dia_user_setting.png)
+![user setting dialog](developerDoc/user_setting.png)
 
 #### Add a user
 
